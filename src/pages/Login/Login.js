@@ -1,31 +1,10 @@
 import React from "react";
 import "./Login.css";
+import Footer from "../../components/Footer/Footer";
 
 const Login = () => {
   return (
     <>
-      {/* <div className="login">
-        <h1>Logo</h1>
-        <form>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Enter UserId"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter Password"
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">
-            Login
-          </button>
-        </form>
-      </div> */}
       <section className="vh-100 login">
         <h1 className="heading">YCP DATABASE MANAGEMENT</h1>
         <div className="container-fluid h-custom">
@@ -46,6 +25,7 @@ const Login = () => {
                     id="form3Example3"
                     className="form-control form-control-lg"
                     placeholder="Enter a valid user Id"
+                    required
                   />
                 </div>
                 <div className="form-outline mb-3">
@@ -54,6 +34,7 @@ const Login = () => {
                     id="form3Example4"
                     className="form-control form-control-lg"
                     placeholder="Enter password"
+                    required
                   />
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
@@ -85,11 +66,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary footer">
-          <div className="text-white mb-3 mb-md-0">
-            Copyright © 2023 Ycp Project
-          </div>
-        </div>
+        <Footer />
       </section>
     </>
   );
